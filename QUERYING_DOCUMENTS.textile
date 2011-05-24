@@ -117,6 +117,6 @@ You can use them just like any other Term when querying the document.
 <pre>
 OM::Samples::ModsArticle.terminology.xpath_for(:journal, :issue, :start_page)
 => "//oxns:relatedItem[@type=\"host\"]/oxns:part/oxns:extent[@unit=\"pages\"]/oxns:start" 
-OM::Samples::ModsArticle.terminology.xpath_for(:journal_title)
-=> "//oxns:relatedItem[@type=\"host\"]/oxns:part/oxns:extent[@unit=\"pages\"]/oxns:end" 
+OM::Samples::ModsArticle.terminology.xpath_for(:journal, :issue, :end_page)
+=> "//oxns:relatedItem[@type=\"host\"]/oxns:part/oxns:extent[@unit=\"pages\"]/oxns:end"
 </pre>
